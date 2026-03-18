@@ -32,82 +32,18 @@ A modern anime database web app built with **Vite + React**, featuring a dark or
 
 ---
 
-## Getting Started
-
-### Prerequisites
-- Node.js v18+
-- npm v8+
-
-### Installation
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/rmndzn/animandex.git
-cd animandex
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the dev server
-npm run dev
-```
-
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Navbar.jsx        # Top navigation bar
-│   ├── Hero.jsx          # Homepage hero section
-│   ├── SearchBar.jsx     # Debounced search input
-│   ├── GenreFilter.jsx   # Genre dropdown
-│   ├── StudioFilter.jsx  # Studio dropdown
-│   ├── AnimeGrid.jsx     # Responsive card grid
-│   ├── AnimeCard.jsx     # Individual anime card
-│   ├── Loader.jsx        # Shimmer skeleton cards
-│   ├── ErrorMessage.jsx  # Error state UI
-│   └── Footer.jsx        # Site footer
-├── pages/
-│   ├── Home.jsx          # Main search & browse page
-│   ├── AnimeDetail.jsx   # Single anime detail page
-│   ├── TopAnime.jsx      # Top rated anime list
-│   └── Favorites.jsx     # Saved favorites page
-├── services/
-│   └── api.js            # Jikan API integration
-├── styles/
-│   └── global.css        # CSS variables & global styles
-├── App.jsx               # Routes
-└── main.jsx              # Entry point
-```
-
----
-
-## API
-
-This project uses the **[Jikan API v4](https://docs.api.jikan.moe/)** — an unofficial MyAnimeList REST API. It is completely free and requires no API key.
-
-> **Note:** Jikan is rate-limited to ~3 requests/second. If you encounter errors, wait a moment and hit **Try Again**.
-
----
-
 ## Design
 
-- **Theme:** Dark background with orange accent glassmorphism
-- **Fonts:** [Outfit](https://fonts.google.com/specimen/Outfit) (display) + [Manrope](https://fonts.google.com/specimen/Manrope) (body)
-- **Effects:** `backdrop-filter` blur, ambient orb animations, shimmer skeletons, hover lift cards
+Dark charcoal background, orange accent colors, glassmorphic cards with soft blur and glow effects. Fonts: Outfit + Manrope. Built to feel like a portfolio-quality product, not a demo.
+
+## Data
+
+All anime data is sourced from [Jikan API](https://jikan.moe), an unofficial REST API for [MyAnimeList](https://myanimelist.net). Free, no API key required.
 
 ---
+
+© 2026 AnimanDex — Made by [rmndzn](https://github.com/rmndzn). All rights reserved.
+
 
 ## License
 
