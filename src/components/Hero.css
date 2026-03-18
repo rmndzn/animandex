@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: calc(var(--nav-height) + 3rem) 1.5rem 4rem;
+  padding-top: calc(var(--nav-height) + 3rem);
+  padding-bottom: 4rem;
 }
 
 .hero__bg-blur {
@@ -71,6 +72,7 @@
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .hero__badge {
@@ -164,7 +166,12 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 380px;
-    padding: calc(var(--nav-height) + 2rem) 1.25rem 3rem;
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 3rem;
+  }
+
+  .hero__content {
+    padding: 0 1.25rem;
   }
 
   .hero__subtitle {
