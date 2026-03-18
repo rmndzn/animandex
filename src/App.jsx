@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import AnimeDetail from './pages/AnimeDetail'
 import TopAnime from './pages/TopAnime'
@@ -8,16 +9,19 @@ import Favorites from './pages/Favorites'
 
 export default function App() {
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/anime/:id" element={<AnimeDetail />} />
-        <Route path="/top" element={<TopAnime />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+      <div style={{ flex: 1 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/anime/:id" element={<AnimeDetail />} />
+          <Route path="/top" element={<TopAnime />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   )
 }
 
