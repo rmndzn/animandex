@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link to="/" className="navbar__logo">
           <span className="navbar__logo-icon">◈</span>
           <span className="navbar__logo-text">
-            Ani<span className="navbar__logo-accent">Glass</span>
+            Animan<span className="navbar__logo-accent">Dex</span>
           </span>
         </Link>
 
